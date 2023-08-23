@@ -1,0 +1,16 @@
+header {
+    .navbar {
+        .titulo-header {
+            color: $titulo_nav;
+            font-family: $belanosima;
+        }
+        .nav-link {
+            color: $titulo_nav;
+            font-size: $textsmall2;
+            margin-right: 50px;
+            &:hover {
+                color: $hover_nav;
+            }
+        }
+    }
+}

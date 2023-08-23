@@ -1,0 +1,46 @@
+/*PORTFOLIO*/
+
+.galeriaPortfolio {
+    .title-portfolio {
+        font-size: $textlarge;
+        color: $textcolor;
+        font-family: $belanosima;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .cardportfolio{
+        border: solid 2px orange;
+        border-radius: 10px;
+        font-family: $ubuntu;
+        margin: 20px 0px 20px 0px;
+        
+        
+        .card-body{
+            padding: 1rem;
+            max-width: 600px;
+            .card-title{
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    .cinema{
+        margin-left: 40%;
+        .img-fluid{
+            height: 450px;
+            object-fit: cover;
+        }
+    }
+    .makeup{
+        margin-left: 40%;
+        .img-fluid{
+            height: 510px;
+            object-fit: cover;
+        }
+        
+    }
+
+    .cosmetic{
+        margin-left: 40%;
+    }
+}

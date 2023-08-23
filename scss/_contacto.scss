@@ -1,0 +1,80 @@
+/*CONTACTO*/
+
+.encabezado-contacto {
+    font-family: $ubuntu;
+    color: $textcolor;
+    font-size: $textsmall;
+    max-width: 900px;
+    .title-contacto {
+        font-size: $textmedium;
+        margin-bottom: 30px;
+    }
+}
+.contacto {
+    .formulario {
+        .form-grid {
+            width: 100%;
+            max-width: 900px;
+            display: grid;
+            gap: 1em;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 1em;
+            font-family: $ubuntu;
+            .title-contacto {
+                font-size: $textlarge;
+                font-family: $ubuntu;
+                color:$textcolor;
+                margin-bottom: 30px;
+            }
+            .campo label {
+                display: block;
+                padding-bottom: 5px;
+            }
+            .campo input {
+                padding: 5px;
+                border-radius: 6px;
+                border: 1px solid #2a546a;
+                width: 100%;
+                max-width: 25rem;
+                height: 2.5rem;
+                background-color: rgb(226, 234, 252);
+            }
+        }
+        .estilotextarea {
+            width:600px;
+            height:200px;
+            color: gray;
+            border-radius: 6px;
+            border: 1px solid #2a546a;
+            background-color: rgb(226, 234, 252);
+            padding: 10px;
+            font-family: $ubuntu;
+            margin-top: 20px;
+        }
+    }
+}
+
+.form-buttons {
+    margin-top: 1em;
+    .button-form {
+        padding: 5px;
+        width: 150px;
+        height: 50px;
+        font-size: $textsmall;
+        background-color: rgb(51, 96, 192);
+        border: none;
+        border-radius: 10px;
+        color: beige;
+        font-family: $ubuntu;
+        &:hover {
+            background-color: rgb(175, 200, 255);
+            color:$textcolor;
+            font-size: 20px;
+        }
+    }
+}
+.whatsapp {
+    position: fixed;
+    left: 90%;
+    bottom: 100px;
+}

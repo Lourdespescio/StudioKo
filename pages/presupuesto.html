@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Studio Ko es una gaencia de servicios para empresas/marcas/emprendimientos que buscan creaer una ientidad y destacarse en el mercado. Si tienes un proyecto y quieres averiguar un presupuesto, ponte en contacto con nosotros." />
+        <meta name="keywords" content="design, designer, ux/ui, community, desarrollo web, programación, diseño, gráfico, presupuesto, solicitar presupuesto, presupuesto branding" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Ubuntu:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="../Imagenes/Studio Ko/logo en blanco.png"/>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Studio Ko solicitar presupuesto</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark ">
+            <div class="container-fluid  ">
+
+                <a class="navbar-brand" href="/index-boot.html"><img src="../Imagenes/Studio Ko/logo en blanco.png" alt="..."
+                        height="56"></a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <h1 class="titulo-header">Studio Ko</h1>
+                    <ul class="navbar-nav me-auto mb-0 mb-lg-0 mx-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Estudio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./presupuesto.html">Presupuesto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="presupuesto">
+            <div class="encabezado">
+                <h1 class="title-presupuesto">PRESUPUESTO</h1>
+                <p class="descripcion">Para transformar tus ideas en realidad, podes completar tus datos y dejarnos una breve descripción de tu proyecto con detalles clave como tus objetivos, plazos y preferencias estéticas. Nuestro equipo experto en diseño  utilizará esta información para crear un presupuesto a medida que se adapte a tus necesidades. Calidad, creatividad y adaptación están garantizadas en cada paso del proceso.</p>
+            </div>
+
+            <div class="datos">
+                <form action="">
+                    <h3 class="title-datos">Datos personlaes</h3>
+                    <div>
+                        <input type="text" class="campo" name="name" placeholder="NOMBRE">
+                    </div>
+                    <br>
+
+                    <div>
+                        <input type="text" class="campo" name="surname" placeholder="APELLIDO">
+                    </div>
+                    <br>
+
+                    <div>
+                        <input type="email" required name="email" class="campo" placeholder="juan@gmail.com">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" class="enviar" value="Enviar datos">
+                        <input type="reset" class="borrar" value="Borrar datos">
+                    </div>
+
+                </form>
+            </div>
+            <div class="linea">
+                <hr>
+            </div>
+            <div class="form-presupuesto">
+                <h3 class="title-solicitar">Solicitar presupuesto</h3>
+
+                <form>
+                    <div class="title-categorias">
+                        <h4>Seleccinar categoria</h4>
+                    </div>
+
+                    <form>
+                        <select name="talles" class="categorias">
+                            <option value="Emprendimiento">Emprendimiento</option>
+                            <option value="Proyecto">Proyecto individual</option>
+                            <option value="Marca">Marca sonsolidada</option>
+                            <option value="ONG">ONG</option>
+                            <option value="Empresa">Empresa</option>
+                        </select>
+                    </form>
+
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="opcion1" value="opcion1">
+                            BRANDING
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="opcion2" value="opcion2">
+                            DESARROLLO
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="opcion3" value="opcion3">
+                            DISEÑO GRÁFICO
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="opcion1" value="opcion1">
+                            ESTRATÉGIA DE CONTENIDO
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="opcion2" value="opcion2">
+                            MARKETING
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="opcion3" value="opcion3">
+                            DESIGN UX
+                        </label>
+                    </div>
+
+                    
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="../Imagenes/Studio Ko/logo en blanco.png" width="80px" alt="logo">
+        </div>
+
+        <div class="brand-name-footer">
+            <h2> Studio Ko</h2>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

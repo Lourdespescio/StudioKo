@@ -1,0 +1,111 @@
+.container {
+    display: grid;
+    grid-template-columns: 0.9fr 0.6fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas: "quienes-somos card-valores";
+}
+
+.quienes-somos {
+    grid-area: quienes-somos;
+    .titulo-quienes {
+        font-size: $textlarge;
+        font-family: $belanosima;
+        color: $textcolor;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .quienes {
+        font-family: $ubuntu;
+        color: $textcolor;
+        font-size: $textsmall2;
+        text-align: left;
+        max-width: 600px;
+    }
+}
+
+/*CARDS VALORES*/
+.card-valores {
+    grid-area: card-valores;
+    .title-valores {
+        font-size: $textlarge;
+        color: $textcolor;
+        margin-bottom: 40px;
+        font-family: $belanosima;
+        text-align: center;
+    }
+    .card-group {
+        margin-bottom: 20px;
+        justify-content: space-between;
+
+        .card-text {
+            font-size: $textsmall;
+            color: $textcolor;
+            text-align: center;
+            font-family: $ubuntu;
+        }
+        .card-img-top {
+            width: 150px;
+            align-items: center;
+            margin: 0px 10px 10px 50px;
+        }
+        .button-servicios {
+            .button {
+                font-size: 25px;
+                background-color: $btncolor;
+                color: $titulo_nav;
+                width: 20rem;
+                text-decoration: none;
+                border: $btncolor;
+                font-family: $ubuntu;
+                text-align: center;
+                text-decoration: none;
+                margin: 50px;
+            }
+        }
+    }
+}
+
+/*EQUIPO*/
+.equipo {
+    .img-user {
+        display: flex;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        .datosuser{
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -80%);
+            color: aliceblue;
+            
+        }
+        
+    }
+    .titleEquipo {
+        font-size: $textlarge;
+        font-family: $belanosima;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .descripcion {
+        font-size: $textsmall2;
+        font-family: $ubuntu;
+        max-width: 50rem;
+        text-align: left;
+    }
+    .user  {
+        filter: brightness(50%);
+        margin: 10px;
+        &:hover {
+            filter: brightness(100%);
+            transform: scale(1.1, 1.1);
+    
+        }
+        
+    }
+    
+}

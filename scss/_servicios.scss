@@ -1,0 +1,72 @@
+.servicios {
+    max-width: 800px;
+    margin-bottom: 50px;
+    .title-service {
+        font-size: $textlarge;
+        color: $textcolor;
+        font-family: $belanosima;
+    }
+    .descripcion {
+        font-size: $textsmall;
+        color: $textcolor;
+        font-family: $ubuntu;
+    }
+}
+.cards-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    .title-card {
+        font-size: $textsmall2;
+        color: $textcolor;
+        font-family: $ubuntu;
+        padding: 10px;
+    }
+    .card-img-serv {
+        width: 130px;
+    }
+}
+.card {
+    background-color: aliceblue;
+    border: $titulo_nav;
+    margin: 1rem;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 50px;
+    
+    
+}
+
+/*ESTADISTICAS*/
+.estadisticas {
+    .title-estadisticas {
+        font-size: $textlarge;
+        color: $textcolor;
+        font-family: $belanosima;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .cards-estadisticas {
+        justify-content: center;
+    }
+    .card-text-bg-warning-mb-3 {
+        background: linear-gradient(rgb(255, 204, 0), rgb(202, 69, 7));
+        border-radius: 10px;
+        text-align: center;
+        font-size: $textsmall2;
+        margin: 20px;
+        margin-top: 50px;
+        padding: 10px;
+        justify-items: center;
+
+        .card-text {
+            color: $titulo_nav;
+        }
+        .card-title {
+            color: $titulo_nav;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.carousel {
+    .d-block {
+        filter: brightness(50%);
+        height: calc(100vh - 82px);
+        object-fit: cover;
+    }
+    .titleCarousel {
+        font-size: 100px;
+        color: $titulo_nav;
+        font-family: $ubuntu;
+    }
+}
