@@ -2,12 +2,12 @@
     font-size: 25px;
     background-color: $btncolor;
     color: $titulo_nav;
-    width: 20rem;
+    max-width: 20rem;
     text-decoration: none;
     border: $btncolor;
     font-family: $ubuntu;
     text-align: center;
-    margin: 50px;
+    
     a {
         text-decoration: none;
         color: white;

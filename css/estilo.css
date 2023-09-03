@@ -22,17 +22,18 @@ header .navbar .nav-link {
     color: #e68a09; }
 
 .carousel .d-block {
-  filter: brightness(50%);
   height: calc(100vh - 82px);
   object-fit: cover; }
 
 .carousel .titleCarousel {
-  font-size: 100px;
   color: aliceblue;
   font-family: "Ubuntu", sans-serif; }
 
 main {
-  margin: 50px;
+  margin: 0 auto;
+  max-width: 1800px;
+  padding: 1rem;
+  box-sizing: border-box;
   background-color: aliceblue; }
 
 .container {
@@ -71,6 +72,8 @@ main {
   .card-valores .card-group {
     margin-bottom: 20px;
     justify-content: space-between; }
+    .card-valores .card-group .card-valores-tam {
+      width: 15rem; }
     .card-valores .card-group .card-text {
       font-size: 16px;
       color: #262626;
@@ -80,60 +83,60 @@ main {
       width: 150px;
       align-items: center;
       margin: 0px 10px 10px 50px; }
-    .card-valores .card-group .button-servicios .button {
+    .card-valores .card-group .text-center .button {
       font-size: 25px;
       background-color: #e65a09;
       color: aliceblue;
       width: 20rem;
       text-decoration: none;
       border: #e65a09;
+      text-align: left;
       font-family: "Ubuntu", sans-serif;
-      text-align: center;
       text-decoration: none;
       margin: 50px; }
 
 /*EQUIPO*/
-.equipo .img-user {
-  display: flex;
-  display: inline-block;
-  position: relative;
-  text-align: center; }
-  .equipo .img-user .datosuser {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -80%);
-    color: aliceblue; }
-
-.equipo .titleEquipo {
-  font-size: 40px;
-  font-family: "Belanosima", sans-serif;
-  text-align: left;
-  margin-bottom: 30px; }
-
-.equipo .descripcion {
-  font-size: 20px;
-  font-family: "Ubuntu", sans-serif;
-  max-width: 50rem;
-  text-align: left; }
-
-.equipo .user {
-  filter: brightness(50%);
-  margin: 10px; }
-  .equipo .user:hover {
-    filter: brightness(100%);
-    transform: scale(1.1, 1.1); }
+.equipo {
+  max-width: 1600px;
+  margin: 0 auto; }
+  .equipo .img-user {
+    display: flex;
+    display: inline-block;
+    position: relative;
+    text-align: center; }
+    .equipo .img-user .datosuser {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -80%);
+      color: aliceblue; }
+  .equipo .titleEquipo {
+    font-size: 40px;
+    font-family: "Belanosima", sans-serif;
+    text-align: left;
+    margin-bottom: 30px; }
+  .equipo .descripcion {
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    max-width: 50rem;
+    text-align: left; }
+  .equipo .user {
+    filter: brightness(50%);
+    margin: 10px; }
+    .equipo .user:hover {
+      filter: brightness(100%);
+      transform: scale(1.1, 1.1);
+      transition: 0.6s; }
 
 .btn-primary {
   font-size: 25px;
   background-color: #e65a09;
   color: aliceblue;
-  width: 20rem;
+  max-width: 20rem;
   text-decoration: none;
   border: #e65a09;
   font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  margin: 50px; }
+  text-align: center; }
   .btn-primary a {
     text-decoration: none;
     color: white; }
@@ -143,7 +146,8 @@ main {
 
 .servicios {
   max-width: 800px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin-top: 50px; }
   .servicios .title-service {
     font-size: 40px;
     color: #262626;
@@ -201,221 +205,231 @@ main {
     color: aliceblue; }
 
 /*PORTFOLIO*/
-.galeriaPortfolio .title-portfolio {
-  font-size: 40px;
-  color: #262626;
-  font-family: "Belanosima", sans-serif;
-  margin-top: 30px;
-  margin-bottom: 50px; }
-
-.galeriaPortfolio .cardportfolio {
-  border: solid 2px orange;
-  border-radius: 10px;
-  font-family: "Ubuntu", sans-serif;
-  margin: 20px 0px 20px 0px; }
-  .galeriaPortfolio .cardportfolio .card-body {
-    padding: 1rem;
-    max-width: 600px; }
-    .galeriaPortfolio .cardportfolio .card-body .card-title {
-      margin-bottom: 1.5rem; }
-
-.galeriaPortfolio .cinema {
-  margin-left: 40%; }
-  .galeriaPortfolio .cinema .img-fluid {
-    height: 450px;
-    object-fit: cover; }
-
-.galeriaPortfolio .makeup {
-  margin-left: 40%; }
-  .galeriaPortfolio .makeup .img-fluid {
-    height: 510px;
-    object-fit: cover; }
-
-.galeriaPortfolio .cosmetic {
-  margin-left: 40%; }
+.galeriaPortfolio {
+  display: flex;
+  flex-direction: column;
+  max-width: 1800px;
+  margin: 0 auto; }
+  .galeriaPortfolio .title-portfolio {
+    font-size: 40px;
+    color: #262626;
+    font-family: "Belanosima", sans-serif;
+    margin-top: 30px;
+    margin-bottom: 50px; }
+  .galeriaPortfolio .cardportfolio {
+    border: solid 2px orange;
+    border-radius: 10px;
+    font-family: "Ubuntu", sans-serif;
+    margin: 20px 0px 20px 0px; }
+    .galeriaPortfolio .cardportfolio .card-body {
+      padding: 1rem;
+      max-width: 600px; }
+      .galeriaPortfolio .cardportfolio .card-body .card-title {
+        margin-bottom: 1.5rem;
+        font-size: 2rem; }
+  .galeriaPortfolio .cinema {
+    align-self: flex-end; }
+    .galeriaPortfolio .cinema .img-fluid {
+      height: 450px;
+      object-fit: cover; }
+  .galeriaPortfolio .makeup {
+    align-self: flex-end; }
+    .galeriaPortfolio .makeup .img-fluid {
+      height: 510px;
+      object-fit: cover; }
+  .galeriaPortfolio .cosmetic {
+    align-self: flex-end; }
 
 /*PRESUPUESTO*/
 .presupuesto {
   display: grid;
-  grid-template-columns: 1fr 0.1fr 1fr;
-  grid-template-rows: 0.5fr 1.5fr;
-  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
   gap: 1px 1px;
   grid-auto-flow: row;
-  grid-template-areas: "encabezado encabezado encabezado" "datos linea form-presupuesto"; }
-  .presupuesto .encabezado {
-    grid-area: encabezado;
+  grid-template-areas: "encabezado encabezado" "datos_personales solicitar_presupuesto"; }
+
+.encabezado {
+  grid-area: encabezado;
+  font-family: "Ubuntu", sans-serif;
+  color: #262626; }
+  .encabezado .descripcion {
+    max-width: 800px;
     font-family: "Ubuntu", sans-serif;
+    color: #262626; }
+  .encabezado .title-presupuesto {
+    font-family: "Belanosima", sans-serif;
     color: #262626;
-    margin-bottom: 50px; }
-    .presupuesto .encabezado .descripcion {
-      max-width: 800px;
-      font-family: "Ubuntu", sans-serif;
-      color: #262626; }
-    .presupuesto .encabezado .title-presupuesto {
-      font-family: "Belanosima", sans-serif;
-      color: #262626; }
-  .presupuesto .datos {
-    grid-area: datos; }
-    .presupuesto .datos .title-datos {
-      margin: 30px 0px 30px 0px;
-      font-size: 30px;
-      color: #262626;
-      font-family: "Belanosima", sans-serif; }
-    .presupuesto .datos .campo {
-      width: 100%;
-      max-width: 300px;
-      height: 50px;
-      font-size: 16px;
-      padding: 10px;
-      font-family: "Ubuntu", sans-serif;
-      color: #262626;
-      margin-bottom: 30px;
-      margin-top: 30px;
-      border: 1px solid #ed6e38;
-      border-radius: 5px; }
-    .presupuesto .datos .enviar {
-      margin: 30px;
-      padding: 5px;
-      width: 150px;
-      height: 50px;
-      font-size: 16px;
-      background-color: #262626;
-      border: none;
-      border-radius: 10px;
-      color: aliceblue;
-      font-family: "Ubuntu", sans-serif; }
-      .presupuesto .datos .enviar:hover {
-        background-color: #f0f1f4;
-        border: 1px solid #131313;
-        color: #131313;
-        font-size: 20px; }
-    .presupuesto .datos .borrar {
-      margin: 30px;
-      padding: 5px;
-      width: 150px;
-      height: 50px;
-      font-size: 16px;
-      background-color: #262626;
-      border: none;
-      border-radius: 10px;
-      color: aliceblue;
-      font-family: "Ubuntu", sans-serif; }
-      .presupuesto .datos .borrar:hover {
-        background-color: #f0f1f4;
-        border: 1px solid #131313;
-        color: #131313; }
-  .presupuesto .linea {
-    grid-area: linea; }
-    .presupuesto .linea hr {
-      height: 70vh;
-      width: 0.1vw;
-      position: relative;
-      left: 50%;
-      border-width: 0;
-      color: #000;
-      background-color: #000; }
-  .presupuesto .form-presupuesto {
-    grid-area: form-presupuesto; }
-    .presupuesto .form-presupuesto .title-solicitar {
-      margin: 30px 0px 30px 30px;
-      font-size: 30px;
-      color: #262626;
-      font-family: "Belanosima", sans-serif; }
-    .presupuesto .form-presupuesto .title-categorias {
-      margin: 30px 0px 10px 30px;
-      color: #262626;
-      font-size: 16px;
-      font-weight: 100; }
-    .presupuesto .form-presupuesto .categorias {
-      width: 100%;
-      max-width: 300px;
-      height: 50px;
-      font-size: 20px;
-      font-family: "Ubuntu", sans-serif;
-      color: #262626;
-      margin: 0px 0px 30px 30px;
-      border: 1px solid #ed6e38;
-      border-radius: 5px; }
-  .presupuesto .checkbox-group {
-    border: 1px solid #ed6e38;
-    background-color: #ed6e38;
-    border-radius: 5px;
+    margin-top: 20px; }
+
+.datos_personales {
+  grid-area: datos_personales; }
+  .datos_personales .title-datos {
+    margin: 30px 0px 30px 0px;
+    font-size: 30px;
+    color: #262626;
+    font-family: "Belanosima", sans-serif; }
+  .datos_personales .campo {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    font-size: 16px;
     padding: 10px;
-    width: 100%;
-    max-width: 330px;
-    margin: 0px 0px 5px 30px;
-    font-size: 20px;
-    font-family: "Ubuntu", sans-serif;
-    color: #ffffff; }
-
-/*CONTACTO*/
-.encabezado-contacto {
-  font-family: "Ubuntu", sans-serif;
-  color: #262626;
-  font-size: 16px;
-  max-width: 900px; }
-  .encabezado-contacto .title-contacto {
-    font-size: 32px;
-    margin-bottom: 30px; }
-
-.contacto .formulario .form-grid {
-  width: 100%;
-  max-width: 900px;
-  display: grid;
-  gap: 1em;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 1em;
-  font-family: "Ubuntu", sans-serif; }
-  .contacto .formulario .form-grid .title-contacto {
-    font-size: 40px;
     font-family: "Ubuntu", sans-serif;
     color: #262626;
-    margin-bottom: 30px; }
-  .contacto .formulario .form-grid .campo label {
-    display: block;
-    padding-bottom: 5px; }
-  .contacto .formulario .form-grid .campo input {
-    padding: 5px;
-    border-radius: 6px;
-    border: 1px solid #2a546a;
-    width: 100%;
-    max-width: 25rem;
-    height: 2.5rem;
-    background-color: #e2eafc; }
-
-.contacto .formulario .estilotextarea {
-  width: 600px;
-  height: 200px;
-  color: gray;
-  border-radius: 6px;
-  border: 1px solid #2a546a;
-  background-color: #e2eafc;
-  padding: 10px;
-  font-family: "Ubuntu", sans-serif;
-  margin-top: 20px; }
-
-.form-buttons {
-  margin-top: 1em; }
-  .form-buttons .button-form {
+    border: 1px solid #ed6e38;
+    border-radius: 5px; }
+  .datos_personales .enviar {
     padding: 5px;
     width: 150px;
     height: 50px;
     font-size: 16px;
-    background-color: #3360c0;
+    background-color: #262626;
     border: none;
     border-radius: 10px;
-    color: beige;
+    color: aliceblue;
     font-family: "Ubuntu", sans-serif; }
-    .form-buttons .button-form:hover {
-      background-color: #afc8ff;
-      color: #262626;
+    .datos_personales .enviar:hover {
+      background-color: #f0f1f4;
+      border: 1px solid #131313;
+      color: #131313;
       font-size: 20px; }
+  .datos_personales .borrar {
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #262626;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    font-family: "Ubuntu", sans-serif; }
+    .datos_personales .borrar:hover {
+      background-color: #f0f1f4;
+      border: 1px solid #131313;
+      color: #131313; }
 
-.whatsapp {
-  position: fixed;
-  left: 90%;
-  bottom: 100px; }
+.solicitar_presupuesto {
+  grid-area: solicitar_presupuesto; }
+  .solicitar_presupuesto .title-solicitar {
+    margin: 30px 0px 30px 30px;
+    font-size: 30px;
+    color: #262626;
+    font-family: "Belanosima", sans-serif; }
+  .solicitar_presupuesto .title-categorias {
+    margin: 30px 0px 10px 30px;
+    color: #262626;
+    font-size: 16px;
+    font-weight: 100; }
+  .solicitar_presupuesto .categorias {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    color: #262626;
+    margin: 0px 0px 30px 30px;
+    border: 1px solid #ed6e38;
+    border-radius: 5px; }
+
+.checkbox-group {
+  border: 1px solid #ed6e38;
+  background-color: #ed6e38;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 330px;
+  margin: 0px 0px 5px 30px;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff; }
+
+/*CONTACTO*/
+.page_contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 1px 1px;
+  grid-auto-flow: row;
+  grid-template-areas: "encabezado-contacto encabezado-contacto" "contacto mapa"; }
+  .page_contacto .encabezado-contacto {
+    grid-area: encabezado-contacto;
+    font-family: "Ubuntu", sans-serif;
+    color: #262626;
+    font-size: 16px;
+    max-width: 900px; }
+    .page_contacto .encabezado-contacto .title-contacto {
+      font-size: 32px;
+      margin-bottom: 30px; }
+  .page_contacto .contacto {
+    grid-area: contacto;
+    display: flex;
+    flex-direction: column; }
+    .page_contacto .contacto .formulario .form-grid {
+      width: 100%;
+      max-width: 1600px;
+      margin-bottom: 1em;
+      font-family: "Ubuntu", sans-serif; }
+      .page_contacto .contacto .formulario .form-grid .title-contacto {
+        font-size: 40px;
+        font-family: "Ubuntu", sans-serif;
+        color: #262626;
+        margin-bottom: 30px; }
+      .page_contacto .contacto .formulario .form-grid .campo label {
+        display: block;
+        padding-bottom: 5px; }
+      .page_contacto .contacto .formulario .form-grid .campo input {
+        padding: 5px;
+        border-radius: 6px;
+        border: 1px solid #2a546a;
+        width: 100%;
+        margin-bottom: 20px;
+        max-width: 25rem;
+        height: 2.5rem;
+        background-color: #e2eafc; }
+      .page_contacto .contacto .formulario .form-grid .estilotextarea {
+        width: 600px;
+        height: 200px;
+        color: gray;
+        border-radius: 6px;
+        border: 1px solid #2a546a;
+        background-color: #e2eafc;
+        padding: 10px;
+        font-family: "Ubuntu", sans-serif;
+        margin-top: 20px; }
+      .page_contacto .contacto .formulario .form-grid .form-buttons {
+        margin-top: 1em; }
+        .page_contacto .contacto .formulario .form-grid .form-buttons .button-form {
+          padding: 5px;
+          width: 150px;
+          height: 50px;
+          font-size: 16px;
+          background-color: #3360c0;
+          border: none;
+          border-radius: 10px;
+          color: beige;
+          font-family: "Ubuntu", sans-serif; }
+          .page_contacto .contacto .formulario .form-grid .form-buttons .button-form:hover {
+            background-color: #afc8ff;
+            color: #262626;
+            font-size: 20px; }
+  .page_contacto .mapa {
+    grid-area: mapa;
+    max-width: 600px;
+    height: 400px; }
+    .page_contacto .mapa iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      padding: 20px; }
+  .page_contacto .whatsapp {
+    position: fixed;
+    left: 90%;
+    bottom: 50px;
+    max-width: 80px; }
+    .page_contacto .whatsapp .img {
+      width: 100%; }
 
 footer {
   font-family: "Belanosima", sans-serif;
@@ -427,3 +441,182 @@ footer {
   align-items: center;
   margin-top: auto;
   color: azure; }
+
+@media screen and (max-width: 800px) {
+  .presupuesto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas: "encabezado encabezado" "datos_personales" "solicitar_presupuesto"; }
+  .page_contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas: "encabezado-contacto encabezado-contacto" "contacto" "mapa"; } }
+
+@media screen and (max-width: 480px) {
+  .presupuesto {
+    display: flex;
+    flex-direction: column; }
+    .presupuesto .encabezado {
+      font-family: "Ubuntu", sans-serif;
+      color: #262626; }
+      .presupuesto .encabezado .descripcion {
+        max-width: 300px;
+        font-family: "Ubuntu", sans-serif;
+        color: #262626; }
+      .presupuesto .encabezado .title-presupuesto {
+        font-family: "Belanosima", sans-serif;
+        color: #262626;
+        margin-top: 20px; }
+    .presupuesto .datos_personales .title-datos {
+      margin: 30px 0px 30px 0px;
+      font-size: 30px;
+      color: #262626;
+      font-family: "Belanosima", sans-serif; }
+    .presupuesto .datos_personales .campo {
+      width: 100%;
+      max-width: 300px;
+      height: 50px;
+      font-size: 16px;
+      padding: 10px;
+      font-family: "Ubuntu", sans-serif;
+      color: #262626;
+      border: 1px solid #ed6e38;
+      border-radius: 5px; }
+    .presupuesto .datos_personales .enviar {
+      padding: 5px;
+      width: 100px;
+      height: 40px;
+      font-size: 16px;
+      background-color: #262626;
+      border: none;
+      border-radius: 10px;
+      color: aliceblue;
+      font-family: "Ubuntu", sans-serif; }
+      .presupuesto .datos_personales .enviar:hover {
+        background-color: #f0f1f4;
+        border: 1px solid #131313;
+        color: #131313;
+        font-size: 20px; }
+    .presupuesto .datos_personales .borrar {
+      padding: 5px;
+      margin-left: 30px;
+      width: 100px;
+      height: 40px;
+      font-size: 16px;
+      background-color: #262626;
+      border: none;
+      border-radius: 10px;
+      color: aliceblue;
+      font-family: "Ubuntu", sans-serif; }
+      .presupuesto .datos_personales .borrar:hover {
+        background-color: #f0f1f4;
+        border: 1px solid #131313;
+        color: #131313; }
+    .presupuesto .solicitar_presupuesto .title-solicitar {
+      margin: 30px 0px 20px 0px;
+      font-size: 30px;
+      color: #262626;
+      font-family: "Belanosima", sans-serif; }
+    .presupuesto .solicitar_presupuesto .title-categorias {
+      margin: 0px 0px 30px 0px;
+      color: #262626;
+      font-size: 16px;
+      font-weight: 70; }
+    .presupuesto .solicitar_presupuesto .categorias {
+      width: 100%;
+      max-width: 250px;
+      height: 50px;
+      font-size: 20px;
+      font-family: "Ubuntu", sans-serif;
+      color: #262626;
+      margin: 0px 0px 30px 30px;
+      border: 1px solid #ed6e38;
+      border-radius: 5px; }
+    .presupuesto .checkbox-group {
+      border: 1px solid #ed6e38;
+      background-color: #ed6e38;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      max-width: 200px;
+      margin: 0px 0px 5px 30px;
+      font-size: 20px;
+      font-family: "Ubuntu", sans-serif;
+      color: #ffffff; }
+  .page_contacto {
+    display: flex;
+    flex-direction: column; }
+  .encabezado-contacto {
+    font-family: "Ubuntu", sans-serif;
+    color: #262626;
+    font-size: 16px;
+    max-width: 350px; }
+    .encabezado-contacto .title-contacto {
+      font-size: 32px;
+      margin-bottom: 30px; }
+  .contacto {
+    display: flex;
+    flex-direction: column; }
+    .contacto .formulario .form-grid {
+      width: 100%;
+      margin-bottom: 1em;
+      font-family: "Ubuntu", sans-serif; }
+      .contacto .formulario .form-grid .title-contacto {
+        font-size: 40px;
+        font-family: "Ubuntu", sans-serif;
+        color: #262626;
+        margin-bottom: 1rem; }
+      .contacto .formulario .form-grid .campo label {
+        display: block;
+        padding-bottom: 5px; }
+      .contacto .formulario .form-grid .campo input {
+        padding: 5px;
+        border-radius: 6px;
+        border: 1px solid #2a546a;
+        width: 100%;
+        margin-bottom: 20px;
+        max-width: 18rem;
+        height: 2.5rem;
+        background-color: #e2eafc; }
+      .contacto .formulario .form-grid .estilotextarea {
+        width: 18rem;
+        height: 11rem;
+        color: gray;
+        border-radius: 6px;
+        border: 1px solid #2a546a;
+        background-color: #e2eafc;
+        padding: 10px;
+        font-family: "Ubuntu", sans-serif;
+        margin-top: 20px; }
+      .contacto .formulario .form-grid .form-buttons {
+        margin-top: 1em; }
+        .contacto .formulario .form-grid .form-buttons .button-form {
+          padding: 5px;
+          width: 150px;
+          height: 50px;
+          font-size: 16px;
+          background-color: #3360c0;
+          border: none;
+          border-radius: 10px;
+          color: beige;
+          font-family: "Ubuntu", sans-serif; }
+          .contacto .formulario .form-grid .form-buttons .button-form:hover {
+            background-color: #afc8ff;
+            color: #262626;
+            font-size: 20px; }
+  .mapa {
+    grid-area: mapa;
+    max-width: 18rem;
+    height: 15rem; }
+    .mapa iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      padding: 20px; } }

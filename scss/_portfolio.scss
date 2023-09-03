@@ -1,6 +1,10 @@
 /*PORTFOLIO*/
 
 .galeriaPortfolio {
+    display: flex;
+    flex-direction: column;
+    max-width: 1800px;
+    margin: 0 auto;
     .title-portfolio {
         font-size: $textlarge;
         color: $textcolor;
@@ -15,24 +19,24 @@
         font-family: $ubuntu;
         margin: 20px 0px 20px 0px;
         
-        
         .card-body{
             padding: 1rem;
             max-width: 600px;
             .card-title{
                 margin-bottom: 1.5rem;
+                font-size: 2rem;
             }
         }
     }
     .cinema{
-        margin-left: 40%;
+        align-self: flex-end;
         .img-fluid{
             height: 450px;
             object-fit: cover;
         }
     }
     .makeup{
-        margin-left: 40%;
+        align-self: flex-end;
         .img-fluid{
             height: 510px;
             object-fit: cover;
@@ -41,6 +45,6 @@
     }
 
     .cosmetic{
-        margin-left: 40%;
+        align-self: flex-end;
     }
 }

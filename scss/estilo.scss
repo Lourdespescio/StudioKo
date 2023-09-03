@@ -10,3 +10,236 @@
 @import "presupuesto";
 @import "contacto";
 @import "footer";
+
+@media screen and (max-width:800px){
+.presupuesto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "encabezado encabezado"
+        "datos_personales"
+        "solicitar_presupuesto";
+}
+
+.page_contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "encabezado-contacto encabezado-contacto"
+        "contacto"
+        "mapa";
+}
+}
+
+@media screen and (max-width:480px){
+    .presupuesto{
+        display: flex;
+        flex-direction: column;
+
+        .encabezado {
+            font-family: $ubuntu;
+            color: $textcolor;
+            .descripcion {
+                max-width: 300px;
+                font-family: $ubuntu;
+                color: $textcolor;
+            }
+            .title-presupuesto {
+                font-family: $belanosima;
+                color: $textcolor;
+                margin-top: 20px;
+            }
+        }
+        
+        .datos_personales {
+            .title-datos {
+                margin: 30px 0px 30px 0px;
+                font-size: 30px;
+                color: $textcolor;
+                font-family: "Belanosima", sans-serif;
+            }
+            .campo {
+                width: 100%;
+                max-width: 300px;
+                height: 50px;
+                font-size: $textsmall;
+                padding: 10px;
+                font-family: $ubuntu;
+                color: $textcolor;
+                border: 1px solid #ed6e38;
+                border-radius: 5px;
+            }
+            .enviar {
+                padding: 5px;
+                width: 100px;
+                height: 40px;
+                font-size: $textsmall;
+                background-color: $textcolor;
+                border: none;
+                border-radius: 10px;
+                color: $titulo_nav;
+                font-family: $ubuntu;
+                &:hover {
+                    background-color: rgb(240, 241, 244);
+                    border: 1px solid rgb(19, 19, 19);
+                    color: rgb(19, 19, 19);
+                    font-size: $textsmall2;
+                }
+            }
+        
+            .borrar {
+                padding: 5px;
+                margin-left: 30px;
+                width: 100px;
+                height: 40px;
+                font-size: $textsmall;
+                background-color: $textcolor;
+                border: none;
+                border-radius: 10px;
+                color: $titulo_nav;
+                font-family: $ubuntu;
+                &:hover {
+                    background-color: rgb(240, 241, 244);
+                    border: 1px solid rgb(19, 19, 19);
+                    color: rgb(19, 19, 19);
+                }
+            }
+        }
+
+        .solicitar_presupuesto {
+            
+            .title-solicitar {
+                margin: 30px 0px 20px 0px;
+                font-size: 30px;
+                color: $textcolor;
+                font-family: $belanosima;
+            }
+            .title-categorias {
+                margin: 0px 0px 30px 0px;
+                color: $textcolor;
+                font-size: $textsmall;
+                font-weight: 70;
+            }
+            .categorias {
+                width: 100%;
+                max-width: 250px;
+                height: 50px;
+                font-size: $textsmall2;
+                font-family: $ubuntu;
+                color: $textcolor;
+                margin: 0px 0px 30px 30px;
+                border: 1px solid #ed6e38;
+                border-radius: 5px;
+            }
+        }
+        .checkbox-group {
+            border: 1px solid #ed6e38;
+            background-color: #ed6e38;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            max-width: 200px;
+            margin: 0px 0px 5px 30px;
+            font-size: $textsmall2;
+            font-family: $ubuntu;
+            color: #ffffff;
+        }
+        
+        }
+
+        .page_contacto {
+            display: flex;
+            flex-direction: column;
+        }
+        .encabezado-contacto {
+            font-family: $ubuntu;
+            color: $textcolor;
+            font-size: $textsmall;
+            max-width: 350px;
+            .title-contacto {
+                font-size: $textmedium;
+                margin-bottom: 30px;
+            }
+        }
+        
+        .contacto {
+            display: flex;
+            flex-direction: column;
+            .formulario {
+                .form-grid {
+                    width: 100%;
+                    margin-bottom: 1em;
+                    font-family: $ubuntu;
+                    .title-contacto {
+                        font-size: $textlarge;
+                        font-family: $ubuntu;
+                        color: $textcolor;
+                        margin-bottom: 1rem;
+                    }
+                    .campo label {
+                        display: block;
+                        padding-bottom: 5px;
+                    }
+                    .campo input {
+                        padding: 5px;
+                        border-radius: 6px;
+                        border: 1px solid #2a546a;
+                        width: 100%;
+                        margin-bottom: 20px;
+                        max-width: 18rem;
+                        height: 2.5rem;
+                        background-color: rgb(226, 234, 252);
+                    }
+                    .estilotextarea {
+                        width:18rem;
+                        height: 11rem;
+                        color: gray;
+                        border-radius: 6px;
+                        border: 1px solid #2a546a;
+                        background-color: rgb(226, 234, 252);
+                        padding: 10px;
+                        font-family: $ubuntu;
+                        margin-top: 20px;
+                    }
+                    .form-buttons {
+                        margin-top: 1em;
+                        .button-form {
+                            padding: 5px;
+                            width: 150px;
+                            height: 50px;
+                            font-size: $textsmall;
+                            background-color: rgb(51, 96, 192);
+                            border: none;
+                            border-radius: 10px;
+                            color: beige;
+                            font-family: $ubuntu;
+                            &:hover {
+                                background-color: rgb(175, 200, 255);
+                                color: $textcolor;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .mapa {
+            grid-area: mapa;
+            max-width: 18rem; 
+            height: 15rem; 
+            iframe{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                padding: 20px;
+            }
+        }
+    }
