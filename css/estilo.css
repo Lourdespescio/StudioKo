@@ -450,38 +450,76 @@ footer {
       color: #262626;
       font-size: 20px;
       text-align: left;
-      max-width: 300px; }
-    .container .card-valores .title-valores {
-      font-size: 40px;
-      color: #262626;
-      margin-bottom: 40px;
-      font-family: "Belanosima", sans-serif;
-      text-align: center; }
-    .container .card-valores .card-group {
-      margin-bottom: 20px;
-      justify-content: space-between; }
-      .container .card-valores .card-group .card-valores-tam {
-        width: 9rem; }
-      .container .card-valores .card-group .card-text {
-        font-size: 16px;
+      max-width: 300px;
+      margin-bottom: 2rem; }
+    .container .card-valores {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .container .card-valores .title-valores {
+        margin-top: 2rem;
+        font-size: 40px;
         color: #262626;
-        text-align: center;
-        font-family: "Ubuntu", sans-serif; }
-      .container .card-valores .card-group .card-img-top {
-        width: 150px;
-        align-items: center;
-        margin: 0px 10px 10px 50px; }
-      .container .card-valores .card-group .text-center .button {
-        font-size: 25px;
-        background-color: #e65a09;
-        color: aliceblue;
-        width: 20rem;
-        text-decoration: none;
-        border: #e65a09;
+        margin-bottom: 40px;
+        font-family: "Belanosima", sans-serif;
+        text-align: center; }
+      .container .card-valores .card-group {
+        margin-bottom: 20px;
+        justify-content: space-between; }
+        .container .card-valores .card-group .card-valores-tam {
+          width: 15rem; }
+        .container .card-valores .card-group .card-text {
+          font-size: 16px;
+          color: #262626;
+          text-align: center;
+          font-family: "Ubuntu", sans-serif; }
+        .container .card-valores .card-group .card-img-top {
+          width: 150px;
+          align-items: center;
+          margin: 0px 10px 10px 50px; }
+        .container .card-valores .card-group .text-center .button {
+          font-size: 25px;
+          background-color: #e65a09;
+          color: aliceblue;
+          width: 20rem;
+          text-decoration: none;
+          border: #e65a09;
+          text-align: left;
+          font-family: "Ubuntu", sans-serif;
+          text-decoration: none;
+          margin: 50px; }
+    .container .equipo {
+      max-width: 300px;
+      margin: 0 auto; }
+      .container .equipo .img-user {
+        display: flex;
+        display: inline-block;
+        position: relative;
+        text-align: center; }
+        .container .equipo .img-user .datosuser {
+          position: absolute;
+          top: 90%;
+          left: 50%;
+          transform: translate(-50%, -80%);
+          color: aliceblue; }
+      .container .equipo .titleEquipo {
+        font-size: 40px;
+        font-family: "Belanosima", sans-serif;
         text-align: left;
+        margin-bottom: 30px; }
+      .container .equipo .descripcion {
+        font-size: 20px;
         font-family: "Ubuntu", sans-serif;
-        text-decoration: none;
-        margin: 50px; }
+        max-width: 50rem;
+        text-align: left; }
+      .container .equipo .user {
+        filter: brightness(50%);
+        margin: 10px; }
+        .container .equipo .user:hover {
+          filter: brightness(100%);
+          transform: scale(1.1, 1.1);
+          transition: 0.6s; }
   .presupuesto {
     display: flex;
     flex-direction: column; }
@@ -640,4 +678,13 @@ footer {
             .page_contacto .contacto .formulario .form-grid .form-buttons .button-form:hover {
               background-color: #afc8ff;
               color: #262626;
-              font-size: 20px; } }
+              font-size: 20px; }
+  .mapa {
+    grid-area: mapa;
+    max-width: 300px;
+    height: 400px; }
+    .mapa iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      padding: 20px; } }
