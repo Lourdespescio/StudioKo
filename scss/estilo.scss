@@ -39,6 +39,74 @@
 }
 
 @media screen and (max-width:480px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        .quienes-somos {
+            .titulo-quienes {
+                font-size: $textlarge;
+                font-family: $belanosima;
+                color: $textcolor;
+                margin-bottom: 40px;
+                text-align: left;
+            }
+            .quienes {
+                font-family: $ubuntu;
+                color: $textcolor;
+                font-size: $textsmall2;
+                text-align: left;
+                max-width: 300px;
+            }
+        }
+        
+        /*CARDS VALORES*/
+        .card-valores {
+            
+            .title-valores {
+                font-size: $textlarge;
+                color: $textcolor;
+                margin-bottom: 40px;
+                font-family: $belanosima;
+                text-align: center;
+            }
+            .card-group {
+                margin-bottom: 20px;
+                justify-content: space-between;
+                
+        
+                .card-valores-tam {
+                    width: 9rem;
+                }
+        
+                .card-text {
+                    font-size: $textsmall;
+                    color: $textcolor;
+                    text-align: center;
+                    font-family: $ubuntu;
+                }
+                .card-img-top {
+                    width: 150px;
+                    align-items: center;
+                    margin: 0px 10px 10px 50px;
+                }
+                .text-center {
+                    .button {
+                        font-size: 25px;
+                        background-color: $btncolor;
+                        color: $titulo_nav;
+                        width: 20rem;
+                        text-decoration: none;
+                        border: $btncolor;
+                        text-align: left;
+                        font-family: $ubuntu;
+                        text-decoration: none;
+                        margin: 50px;
+                    }
+                    
+                }
+            }
+        }
+    }
     .presupuesto{
         display: flex;
         flex-direction: column;

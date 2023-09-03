@@ -423,13 +423,6 @@ main {
       height: 100%;
       border-radius: 10px;
       padding: 20px; }
-  .page_contacto .whatsapp {
-    position: fixed;
-    left: 90%;
-    bottom: 50px;
-    max-width: 80px; }
-    .page_contacto .whatsapp .img {
-      width: 100%; }
 
 footer {
   font-family: "Belanosima", sans-serif;
@@ -460,6 +453,53 @@ footer {
     grid-template-areas: "encabezado-contacto encabezado-contacto" "contacto" "mapa"; } }
 
 @media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    /*CARDS VALORES*/ }
+    .container .quienes-somos .titulo-quienes {
+      font-size: 40px;
+      font-family: "Belanosima", sans-serif;
+      color: #262626;
+      margin-bottom: 40px;
+      text-align: left; }
+    .container .quienes-somos .quienes {
+      font-family: "Ubuntu", sans-serif;
+      color: #262626;
+      font-size: 20px;
+      text-align: left;
+      max-width: 300px; }
+    .container .card-valores .title-valores {
+      font-size: 40px;
+      color: #262626;
+      margin-bottom: 40px;
+      font-family: "Belanosima", sans-serif;
+      text-align: center; }
+    .container .card-valores .card-group {
+      margin-bottom: 20px;
+      justify-content: space-between; }
+      .container .card-valores .card-group .card-valores-tam {
+        width: 9rem; }
+      .container .card-valores .card-group .card-text {
+        font-size: 16px;
+        color: #262626;
+        text-align: center;
+        font-family: "Ubuntu", sans-serif; }
+      .container .card-valores .card-group .card-img-top {
+        width: 150px;
+        align-items: center;
+        margin: 0px 10px 10px 50px; }
+      .container .card-valores .card-group .text-center .button {
+        font-size: 25px;
+        background-color: #e65a09;
+        color: aliceblue;
+        width: 20rem;
+        text-decoration: none;
+        border: #e65a09;
+        text-align: left;
+        font-family: "Ubuntu", sans-serif;
+        text-decoration: none;
+        margin: 50px; }
   .presupuesto {
     display: flex;
     flex-direction: column; }
